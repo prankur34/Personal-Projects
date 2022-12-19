@@ -8,9 +8,9 @@ function Tables({ pd }) {
       <h1 className="text-2xl m-4 font-inter font-bold">
         Top 100 Cryptocurrencies by Market Cap
       </h1>
-      <div class="overflow-x-auto relative shadow-md sm:rounded-lg m-4">
-        <table class="w-full  text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead class="text-xs  text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <div class="overflow-x-auto relative shadow-md sm:rounded-lg m-8">
+        <table class="w-full  text-sm text-left text-gray-500">
+          <thead class="text-xs  text-gray-700 uppercase bg-gray-50">
             <tr>
               <th scope="col" class="p-4 text-center">
                 #
@@ -22,7 +22,12 @@ function Tables({ pd }) {
                 PRICE
               </th>
               <th scope="col" class="p-4">
-                24H
+                <div className="flex justify-start items-center">
+                  24H
+                  <span class="material-icons text-sm text-indigo-600">
+                    arrow_downward
+                  </span>
+                </div>
               </th>
               <th scope="col" class="p-4">
                 7D
@@ -42,12 +47,17 @@ function Tables({ pd }) {
           {pd.map((pd) => {
             return (
               <tbody>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <tr class="bg-white border-b  hover:bg-gray-50 ">
                   <th
                     scope="row"
                     class="p-4 text-center font-medium text-gray-900 whitespace-nowrap dark:text-white"
                   >
-                    {count++}
+                    <div className="flex justify-center items-center">
+                      <span class="material-icons text-xl mr-4 font-600 text-gray-400">
+                        star_border
+                      </span>
+                      {count++}
+                    </div>
                   </th>
                   <th
                     scope="row"
