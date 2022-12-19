@@ -11,9 +11,7 @@ function Cards({ data }) {
             <div className="flex p-4">
               <img
                 src={item.image}
-                className="
-              
-              max-w-full  h-auto 
+                className="max-w-full  h-auto 
               w-12 mr-4"
                 alt="crypto"
               />
