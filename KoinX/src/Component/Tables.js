@@ -70,16 +70,41 @@ function Tables({ pd }) {
                     />
                     {pd.name}
                   </th>
-                  <td class="p-2">{pd.current_price}</td>
-                  <td class="p-2">
-                    {pd.price_change_percentage_24h_in_currency}%
+                  <td class="p-2 text-black">${pd.current_price}</td>
+                  <td class="p-2 text-black">
+                    <div className="flex justify-start items-center">
+                      <span class="material-icons font-800 text-red-600 ">
+                        arrow_drop_down
+                      </span>
+                      {Math.round(pd.price_change_percentage_24h_in_currency)}%
+                    </div>
                   </td>
-                  <td class="p-2">
-                    {pd.price_change_percentage_7d_in_currency}%
+                  <td class="p-2  text-black">
+                    <div className="flex justify-start items-center">
+                      <span class="material-icons font-800 text-green-500">
+                        arrow_drop_up
+                      </span>
+                      {Math.round(pd.price_change_percentage_7d_in_currency)}%
+                    </div>
                   </td>
-                  <td class="p-2">{pd.market_cap}</td>{" "}
-                  <td class="p-2">{pd.total_volume}</td>
-                  <td class="p-2">{pd.circulating_supply}</td>
+                  <td class="p-2 text-black">${pd.market_cap}</td>{" "}
+                  <td class="p-2 text-black">${pd.total_volume}</td>
+                  <td class="p-2 text-black">
+                    {pd.circulating_supply} BTC
+                    <svg
+                      width="160"
+                      className="mt-2"
+                      height="6"
+                      viewBox="0 0 160 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 3C0 1.34315 1.34315 0 3 0H157C158.657 0 160 1.34315 160 3C160 4.65685 158.657 6 157 6H3C1.34315 6 0 4.65685 0 3Z"
+                        fill="#EFF2F5"
+                      />
+                    </svg>
+                  </td>
                 </tr>
               </tbody>
             );

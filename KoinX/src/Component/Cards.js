@@ -7,7 +7,7 @@ function Cards({ data }) {
     <div className="flex justify-center items-center">
       {newData.map((item) => {
         return (
-          <div class="max-w-sm m-4 w-64 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
+          <div class="max-w-sm m-4 w-68 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
             <div className="flex p-4">
               <img
                 src={item.image}
