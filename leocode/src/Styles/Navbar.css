@@ -1,22 +1,23 @@
 nav.navbar {
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   font-family: Montserrat, Medium;
   top: 0px;
   left: 0px;
+  position: fixed;
   width: 1366px;
   height: 80px;
 }
 
 .navbar__logo {
+  position: absolute;
   top: -60px;
   left: 50px;
   width: 200px;
   height: 200px;
-  background: transparent url("../Assets/logo (1) (1).png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../Assets/logo (1) (1).png") 0% 0% no-repeat padding-box;
   opacity: 1;
   margin-left: 2rem;
 }
@@ -29,6 +30,7 @@ nav.navbar {
 }
 
 .navbar__link-one {
+  position: absolute;
   top: 31px;
   left: 321px;
   width: 110px;
@@ -37,12 +39,12 @@ nav.navbar {
 }
 
 .navbar__link-two {
+  position: absolute;
   top: 31px;
   left: 502px;
   width: 162px;
   height: 19px;
   opacity: 1;
-  margin: 1rem;
 }
 
 .navbar__icon {
@@ -50,6 +52,7 @@ nav.navbar {
 }
 
 .navbar__navigation {
+  position: absolute;
   top: 28px;
   left: 1231px;
   width: 85px;
@@ -62,4 +65,4 @@ nav.navbar {
 
 .navbar__button {
   text-align: center;
-} /*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */
