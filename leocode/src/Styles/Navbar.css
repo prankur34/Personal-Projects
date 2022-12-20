@@ -6,7 +6,7 @@ nav.navbar {
   font-family: Montserrat, Medium;
   top: 0px;
   left: 0px;
-  position: fixed;
+  position: absolute;
   width: 1366px;
   height: 80px;
 }
@@ -17,7 +17,7 @@ nav.navbar {
   left: 50px;
   width: 200px;
   height: 200px;
-  background: transparent url("../Assets/logo (1) (1).png") 0% 0% no-repeat padding-box;
+  background: transparent url("../img/logo (1) (1).png") 0% 0% no-repeat padding-box;
   opacity: 1;
   margin-left: 2rem;
 }

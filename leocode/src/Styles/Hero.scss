@@ -7,7 +7,8 @@
   left: 0px;
   width: 1366px;
   height: 692px;
-  background: url("../Assets/banner-image-1.png") 0% 0% no-repeat padding-box;
+  background: transparent url("../img/banner-image-1.png") 0% 0% no-repeat
+    padding-box;
   background-image: linear-gradient(
     to right top,
     #e0fff1,
@@ -64,7 +65,7 @@ input.hero__searchbox {
   width: 668px;
   height: 365px;
   position: absolute;
-  background: transparent url("../Assets/banner-image-1.png") 0% 0% no-repeat
+  background: transparent url("../img/banner-image-1.png") 0% 0% no-repeat
     padding-box;
 }
 
